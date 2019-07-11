@@ -1,0 +1,20 @@
+IFSC:XXXXX560037
+      Opening Balance Rs                   New Credits Rs                New Debits Rs            Closing Balance Rs               Minimum Payment Rs
+Transactions:
+March 17                   TOSCANO                          BANGALORE                                                                                                         1.00
+March 17                   RED APPLE KITCHEN CONSU XXX                                                                                                                        1.00
+March 18                   BLISS CHOCOLATES INDIA BANGALORE                                                                                                                   1.00
+March 21                   BLISS CHOCOLATES INDIA BANGALORE                                                                                                                   2.00
+March 21                   THE OBEROI POLO CLUB - XXX                                                                                                                      2.00
+March 22                   THE TAJ WEST END-TAJ EA BANGALORE                                                                                                                  2.00
+March 22                   CAFE NOIR                        BANGALORE                                                                                                      2.00
+March 22                   CAFE NOIR                        BANGALORE                                                                                                      3.00
+March 23                   CAFE COFFEE DAY                         BANGALORE                                                                                                  3.00
+November 27                PLAZA PREMIUM                       BENGALURU                                                                                                         3.00
+December 7                 TRAVEL FOOD SERVICES                       KOLKATA                                                                                                4.00
+December 10                COFFE & MORE 5                      KOLKATA                                                                                                           4.00
+December 12                SHELL J K ENTERPRISES                     BANGALORE                                                                                            4.00
+December 12                CONVENIENCE FEE-FUEL PURCHASE                                                                                                                       5.00
+December 12                GST/IGST @18% ON FUEL CONVENIENCE FEE                                                                                                               5.00
+September 30 COSTCO WHSE #0423 00000 SUNNYVALE                                                                           2.00            1.00
+September 30 MACY'S EAST #340 000000 SUNNYVALE                                                                            2.00             1.00
