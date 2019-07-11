@@ -10,7 +10,7 @@ from tabulate import tabulate
 class BankClassify():
 
     #def __init__(self, data="AllData1.csv"):
-    def __init__(self, data="AllData2.csv"):
+    def __init__(self, data="Transactions.csv"):
         """Load in the previous data (by default from AllData.csv) and initialise the classifier"""
         if os.path.exists(data):
             self.prev_data = pd.read_csv(data)
@@ -32,7 +32,7 @@ class BankClassify():
 
         self.prev_data = pd.concat([self.prev_data, self.new_data])
         #self.prev_data.to_csv("AllData1.csv", index=False)
-        self.prev_data.to_csv("AllData2.csv", index=False)
+        self.prev_data.to_csv("Transactions.csv", index=False)
 
     def _prep_for_analysis(self):
         """Prepare data for analysis in pandas, setting index types and subsetting"""
@@ -139,48 +139,7 @@ class BankClassify():
 
         return df
 
-    # def _read_santander_file(self, filename):
-    #     """Read a file in the plain text format that Santander provides downloads in.
-    #
-    #     Returns a pd.DataFrame with columns of 'date', 'desc' and 'amount'."""
-    #     with open(filename, errors='replace') as f:
-    #         lines = f.readlines()
-    #
-    #     dates = []
-    #     descs = []
-    #     amounts = []
-    #
-    #     for line in lines[4:]:
-    #
-    #         line = "".join(i for i in line if ord(i)<128)
-    #         if line.strip() == '':
-    #             continue
-    #
-    #         splitted = line.split(":")
-    #
-    #         category = splitted[0]
-    #         data = ":".join(splitted[1:])
-    #
-    #         if category == 'Date':
-    #             dates.append(data.strip())
-    #         elif category == 'Description':
-    #             descs.append(data.strip())
-    #         elif category == 'Amount':
-    #             just_numbers = re.sub("[^0-9\.-]", "", data)
-    #             amounts.append(just_numbers.strip())
-    #
-    #     df = pd.DataFrame({'date':dates, 'desc':descs, 'amount':amounts})
-    #
-    #     df['amount'] = df.amount.astype(float)
-    #     df['desc'] = df.desc.astype(str)
-    #     df['date'] = df.date.astype(str)
-    #
-    #     return df
-    #
-    #
-
-    ######################## OWN READ FUNCTION #######################
-
+   
     def _read_own_file(self, filename):
 
         with open(filename, errors='replace') as f:
@@ -211,7 +170,7 @@ class BankClassify():
 
         ##########################IF FEDERAL BANK:
 
-        # if filename=='AccDetails7.txt':
+        # 
         #
         #     for line in lines[10:-1]:
         #
@@ -225,7 +184,7 @@ class BankClassify():
         #
         # ########################IF AXIS BANK:
         #
-        # elif filename== 'AccDetails2.txt':
+        # 
         #     for line in lines[10:-1]:
         #         s= line.replace(' ','')
         #         s= line.split()
@@ -235,7 +194,7 @@ class BankClassify():
         #
         # ######################## IF CITI BANK:
         #
-        # elif filename== 'AccDetails6.txt':
+        # 
         #     for line in lines[5:-1]:
         #         s = line.replace(' ', '')
         #         s = line.split()
@@ -264,7 +223,7 @@ class BankClassify():
         #
         # ################################### AMEX
         #
-        # elif filename== 'AccDetails53.txt':
+        # 
         #     for line in lines[5:-3]:
         #         s = line.replace(' ', '')
         #         s = line.split()
@@ -273,7 +232,7 @@ class BankClassify():
         #         descs.append(" ".join(s[2:-1]))
         #
         # ################################## KOTAK
-        # elif filename== 'AccDetails27.txt':
+        # 
         #     for line in lines[4:-2]:
         #         s=line.replace(' ','')
         #         s=line.split()
@@ -283,7 +242,7 @@ class BankClassify():
         #
         #
         # #############################
-        # elif filename== 'AccDetails13.txt':
+        # 
         #     for line in lines[5:-2]:
         #         s = line.replace(' ', '')
         #         s = line.split()
